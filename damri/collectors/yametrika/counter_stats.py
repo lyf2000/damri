@@ -1,5 +1,4 @@
-from common.collectors import BaseDataCollector
-from common.utils import WordToDateParser
+from damri.collectors.base.collector import BaseDataCollector
 from damri.integrations.api.yametrika.api import YaMetrikaCounterStatsAPIClient
 from damri.integrations.api.yametrika.filter_params import StatsFilterParam
 from damri.integrations.api.yametrika.models import (
@@ -10,6 +9,7 @@ from damri.integrations.api.yametrika.models import (
     SearchStatModel,
     UrlStatModel,
 )
+from damri.utils.datetime import WordToDateParser
 
 
 class CounterStatsDataCollector(BaseDataCollector):

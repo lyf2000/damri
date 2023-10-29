@@ -1,8 +1,9 @@
 from datetime import date, datetime
 
-from common.models import BaseFrozenModel
-from damri.integrations.base.params import BaseLimitOffsetFilterParams
 from pydantic import validator
+
+from damri.integrations.base.params import BaseLimitOffsetFilterParams
+from damri.models.base import BaseFrozenModel
 
 
 class BaseUISParamsInner(BaseLimitOffsetFilterParams):

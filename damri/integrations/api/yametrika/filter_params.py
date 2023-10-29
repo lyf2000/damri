@@ -1,6 +1,6 @@
 from typing import TypeVar
 
-from common.models import BaseFrozenModel
+from damri.models.base import BaseFrozenModel
 
 
 class YaMetrikaLimitOffsetFilterParams(BaseFrozenModel):

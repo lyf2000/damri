@@ -1,7 +1,8 @@
-from common.models import BaseModel
-from damri.utils.datetime import now
 from django.db import models
 from django.utils.translation import gettext as _
+
+from damri.models.base import BaseModel
+from damri.utils.datetime import now
 
 
 def default_json():
